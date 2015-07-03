@@ -186,7 +186,6 @@
             if ([self.mapView.annotations containsObject:anno]) {
                 break;
             }
-            
             [self.mapView addAnnotation:anno];
         }
     }
