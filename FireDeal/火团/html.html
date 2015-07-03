@@ -1,0 +1,609 @@
+ <html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+            <meta charset="utf-8">
+                <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+                    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+                        <meta name="format-detection" content="telephone=no">
+                            <meta name="format-detection" content="email=no">
+                                <meta name="apple-mobile-web-app-capable" content="yes">
+                                    <meta name="apple-mobile-web-app-title" content="点评团购触屏版 -上海团购-大众点评团上海站">
+                                        <meta name="apple-itunes-app" content="app-id=351091731">
+                                            <link rel="apple-touch-startup-image" size="640x920" href="http://m1.s2.dpfile.com/m/img/app/tuangou/startup4.8edce79bb20fe844f45c989336e5935e.png" media="(device-height:480px)">
+                                                <link rel="apple-touch-startup-image" href="http://m1.s2.dpfile.com/m/img/app/tuangou/startup5.100ee1ca3bfbcf9c295ce8cc91659f60.png" media="(device-height:568px)">
+                                                    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://m1.s2.dpfile.com/m/img/app/tuangou/apple-touch-icon-57x57.b65964186a2866605deb078a5e8d31be.png">
+                                                        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://m1.s2.dpfile.com/m/img/app/tuangou/apple-touch-icon-72x72.6956ac9c5c482a13efe1b6bd06e717b6.png">
+                                                            <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://m1.s2.dpfile.com/m/img/app/tuangou/apple-touch-icon-114x114.5e782d534b6f7c3f7d928832f0f83613.png">
+                                                                <title>团购详情-大众点评团上海站</title>
+                                                                <script>var G_rtop=+new Date,_gaq=[
+                                                                                                   ['_setAccount','UA-16496742-2'],
+                                                                                                   ['_addOrganic','soso','w'],
+                                                                                                   ['_addOrganic','sogou','query'],
+                                                                                                   ['_addOrganic','yodao','q'],
+                                                                                                   ['_addOrganic','bing','q'],
+                                                                                                   ['_addOrganic','360','q'],
+                                                                                                   ['_addOrganic','gougou','search'],
+                                                                                                   ['_setDomainName', 'm.dianping.com'],
+                                                                                                   ['_setAllowHash', false]]
+                                                                                                   dpga=function(key){_gaq.push(['_trackPageview', key||''])},
+                                                                                                   pageTracker={_trackPageview:dpga},_hip=[
+                                                                                                                                           ['_setPageId', 171020],
+                                                                                                                                           ['_setCityId', 1],
+                                                                                                                                           ['_setPVInitData', '']
+                                                                                                                                           ];
+                                                                    </script>
+                                                                
+                                                                
+                                                                <script>
+                                                                    //for weixin share
+                                                                    function weixinShare(type){
+                                                                        var appid = 'wx841a97238d9e17b2';
+                                                                        var img_url = "http://m1.s1.dpfile.com/sc/2014/mobile_pay5/dp_icon_100.png";
+                                                                        var link = window.location.href;
+                                                                        var desc = '团购详情-大众点评团上海站';
+                                                                        var title = '大众点评团';
+                                                                        var shareFriend = function () {
+                                                                            WeixinJSBridge.invoke('sendAppMessage',{
+                                                                                                  "appid":appid,
+                                                                                                  "img_url":img_url,
+                                                                                                  "img_width":"640",
+                                                                                                  "img_height":"640",
+                                                                                                  "link":link,
+                                                                                                  "desc":desc,
+                                                                                                  "title":title
+                                                                                                  },function(res) {
+                                                                                                  _report('send_msg', res.err_msg);
+                                                                                                  })
+                                                                        }
+                                                                        var shareTimeline = function () {
+                                                                            WeixinJSBridge.invoke('shareTimeline',{
+                                                                                                  "appid":appid,
+                                                                                                  "img_url":img_url,
+                                                                                                  "img_width":"640",
+                                                                                                  "img_height":"640",
+                                                                                                  "link":link,
+                                                                                                  "desc":desc,
+                                                                                                  "title":title
+                                                                                                  },function(res) {
+                                                                                                  _report('timeline', res.err_msg);
+                                                                                                  });
+                                                                        }
+                                                                        if(type == 'friend'){
+                                                                            return shareFriend;
+                                                                        }else if(type == 'timeline'){
+                                                                            return shareTimeline;
+                                                                        }
+                                                                    }
+                                                                
+                                                                var shareFriend = weixinShare('friend');
+                                                                var shareTimeline = weixinShare('timeline');
+                                                                document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+                                                                                          WeixinJSBridge.on('menu:share:appmessage', function(argv){
+                                                                                                            shareFriend();
+                                                                                                            });
+                                                                                          WeixinJSBridge.on('menu:share:timeline', function(argv){
+                                                                                                            shareTimeline();
+                                                                                                            });
+                                                                                          WeixinJSBridge.invoke("getInstallState",{
+                                                                                                                "packageUrl": "dianping://home",
+                                                                                                                "packageName": "com.dianping.v1"
+                                                                                                                },function(res){
+                                                                                                                });
+                                                                                          }, false);
+                                                                    </script>
+</head>
+
+<body>
+    <link rel="stylesheet" href="http://m1.s2.dpfile.com/concat/~mod~fun-base-theme~0.1.3~css~style.css,~mod~easy-login~0.2.9~css~style.css,~mod~mobile-common-search~0.4.3~css~style.css,~mod~mobile-download-banner~0.1.13~css~style.css,~mod~ktv-structure-static~0.1.11~css~style.css,~mod~app-m-tuangou~1.2.29~css~style.css" type="text/css">
+        <header>
+            <a class="back back-gray" href="javascript:history.go(-1)">返回</a>
+            <div class="info">图文详情</div>
+        </header>
+        <div class="cost-box">
+            <div class="buy-box">
+                <div class="price">¥</div>
+                <div class="price sum">180</div>
+                <div class="past Fix">
+                    <div class="t">
+                        <span class="o-price">¥200</span>
+                    </div>
+                </div>
+                
+                
+                <div class="last">
+                    <a onclick="_hip.push(['mv', {module: '5_button_buy', action:'click', type:'up', dealgrp_id:'12469311'}]);" href="/tuan/buy/12484550" class="buy-btn ">
+                        立即购买
+                    </a>
+                </div>
+            </div>	</div>
+        
+        <div class="detail-info group-detail">
+            <div class="con">
+                <div class="info Fix">
+                    <div class="detail-box"><h3 class="tit">团购详情</h3><div class="detail-tit"></div>
+                        <table width="100%" cellpadding="0" cellspacing="0" class="detail-table">
+                            <thead>
+                                <tr>
+                                    <th width="50%">名称</th>
+                                    <th width="25%">数量</th>
+                                    <th width="25%">单价</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>代金券</td>
+                                    <td class="tc">1张</td>
+                                    <td class="tc">200元</td>
+                                </tr>
+                                <tr class="total">
+                                    <td></td>
+                                    <td class="tc">总价值<br><strong>团购价</strong></td>
+                                    <td class="tc">200元<br><strong>180元</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="detail-info buy-know">
+            <div class="con">
+                <div class="detail-box"><h3 class="tit">购买须知</h3><div class="detail-box">
+                    <div class="purchase-notes">
+                        <dl>
+                            <dt>有效期</dt>
+                            <dd>
+                                <p class="listitem">2015-06-18至2015-08-31</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>除外日期</dt>
+                            <dd>
+                                <p class="listitem">2015-06-20至2015-06-22不可用</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>使用时间</dt>
+                            <dd>
+                                <p class="listitem">仅限周一至周五使用，6月27日-6月28日本周末可用，其他周末及法定假日不可用</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>预约信息</dt>
+                            <dd>
+                                <p class="listitem">无需预约，如遇消费高峰时段您可能需要排队</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>堂食外带</dt>
+                            <dd>
+                                <p class="listitem">本单只适用于堂食，只适用于大厅使用，敬请谅解</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>规则提醒</dt>
+                            <dd>
+                                <p class="listitem">可累积使用，不兑现，不找零</p>
+                                <p class="listitem">全场通用</p>
+                                <p class="listitem">不再与其他优惠同享</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>温馨提示</dt>
+                            <dd>
+                                <p class="listitem">如需团购券发票，请您在消费时向商户咨询</p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="detail-info group-detail">
+            <div class="con">
+                <div class="info Fix">
+                    <div class="detail-box"><h3 class="tit">产品介绍</h3><p class="listitem">乡巴佬鸡</p>
+                        <p class="explain"></p>
+                        <div class="img"><img src="http://t2.s2.dpfile.com/pc/mc/5ed906674f59971e87da1bee3e015f3f(640x1024)/thumb.jpg"></div>
+                        <p class="listitem">蛋黄鸡翅</p>
+                        <p class="explain"></p>
+                        <div class="img"><img src="http://t2.s2.dpfile.com/pc/mc/c1d14c4467a983e55dc8d48b677c79f3(640x1024)/thumb.jpg"></div>
+                        <p class="listitem">口水虾</p>
+                        <p class="explain"></p>
+                        <div class="img"><img src="http://t3.s1.dpfile.com/pc/mc/8f12476842cfec114632911e66649009(640x1024)/thumb.jpg"></div>
+                        <p class="listitem">清炖牛肉</p>
+                        <p class="explain"></p>
+                        <div class="img"><img src="http://t3.s1.dpfile.com/pc/mc/d9f03a2c5a5b84c9523929f4483f5f1d(640x1024)/thumb.jpg"></div>
+                        <p class="listitem">腊鸭舌</p>
+                        <p class="explain"></p>
+                        <div class="img"><img src="http://t1.s2.dpfile.com/pc/mc/23d32e25165e0fe74fd1ce649aad3c06(640x1024)/thumb.jpg"></div>
+                        <p class="listitem">剁椒鱼头</p>
+                        <p class="explain"></p>
+                        <div class="img"><img src="http://t2.s2.dpfile.com/pc/mc/0cf8eb2ee91f26f6dc77373b7d09962c(640x1024)/thumb.jpg"></div>
+                        <p class="listitem">雪花排条</p>
+                        <p class="explain"></p>
+                        <div class="img"><img src="http://t1.s2.dpfile.com/pc/mc/24625456b937f05a7e17301926fb0793(640x1024)/thumb.jpg"></div>
+                        <p class="listitem">肥牛一锅鲜</p>
+                        <p class="explain"></p>
+                        <div class="img"><img src="http://t2.s2.dpfile.com/pc/mc/04614a40c57095c7e3703e3425b7ec41(640x1024)/thumb.jpg"></div>
+                        <p class="listitem">子排炒年糕</p>
+                        <p class="explain"></p>
+                        <div class="img"><img src="http://t2.s2.dpfile.com/pc/mc/a8f9be26a631eaac8899a7d71466fe43(640x1024)/thumb.jpg"></div>
+                        <p class="listitem">干菜刀豆</p>
+                        <p class="explain"></p>
+                        <div class="img"><img src="http://t1.s2.dpfile.com/pc/mc/639b53e919de525ef6d8593df3538a79(640x1024)/thumb.jpg"></div>
+                        <p class="listitem">滑口千张</p>
+                        <p class="explain"></p>
+                        <div class="img"><img src="http://t1.s1.dpfile.com/pc/mc/abe8fdcc87bf8717c3f0bbeda1cf5425(640x1024)/thumb.jpg"></div>
+                        <p class="listitem">响铃脆香肉</p>
+                        <p class="explain"></p>
+                        <div class="img"><img src="http://t1.s2.dpfile.com/pc/mc/7875f9dbdc8a94152f2568711b71f4ea(640x1024)/thumb.jpg"></div>
+                        <p class="listitem">特色牛肉卷</p>
+                        <p class="explain"></p>
+                        <div class="img"><img src="http://t1.s1.dpfile.com/pc/mc/4cdd8ece999efd8813c4ebb6a5a79852(640x1024)/thumb.jpg"></div>
+                        <p class="listitem">蜜汁南瓜</p>
+                        <p class="explain"></p>
+                        <div class="img"><img src="http://t3.s2.dpfile.com/pc/mc/f2447a3dab65b069d18b6f875a4a64b4(640x1024)/thumb.jpg"></div>
+                        <p class="listitem">香脆蛋酥</p>
+                        <p class="explain"></p>
+                        <div class="img"><img src="http://t2.s2.dpfile.com/pc/mc/3d9e9d320432ce81a49d52a118e87043(640x1024)/thumb.jpg"></div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="detail-info group-detail">
+            <div class="con">
+                <div class="info Fix">
+                    <div class="detail-box"><h3 class="tit">商户介绍</h3><div>　　新白鹿，一家尊享生活饮食格调的餐厅，精美的装修，时尚的混搭，体验各种舒适的感觉，抓住每个精彩的瞬间。换种方式、换种心情，精彩立即上演。在这里，纳众多美食，汇独特风味，“汤鲜”、“鱼嫩”、“虾肥”，不断挑逗你的味蕾，品尝、咀嚼，感触美食新的时尚。真切的问候，用心的服务，满足食客的需求。新白鹿，新鲜你的饮食生活！ </div>
+                        <p class="listitem"></p>
+                        <p class="explain"></p>
+                        <div class="img"><img src="http://t1.s2.dpfile.com/pc/mc/4c6ceb4ccae8af22901393d6394daef8(640x1024)/thumb.jpg"></div>
+                        <p class="listitem"></p>
+                        <p class="explain"></p>
+                        <div class="img"><img src="http://t3.s1.dpfile.com/pc/mc/35ff487bb28a199f0e52d27168b33fcd(640x1024)/thumb.jpg"></div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <a onclick="_hip.push(['mv', {module: '5_button_buy', action:'click', type:'down', dealgrp_id:'12469311'}]);" href="/tuan/buy/12484550" class="buy-now ">
+            <span>¥180</span>
+            <span>立即购买</span>
+        </a>
+        
+        <script type="text/javascript">_gaq.push(['_trackPageview', 'dealdetail/上海']);</script>
+        
+        <script>!function(n){"use strict";function t(n,t){for(var r in t)n[r]||(n[r]=t[r])}function r(n,r){t(n.prototype,r)}function i(n){var t=n.match(V),r=t[1],i=t[2]||"*",o=t[3]||"";return e({n:r,v:i,p:o})}function e(n){var t=n.n+"@"+n.v;return n.id=t+n.p,n.k=t,n}function o(n,t){return t.map?n:n+".js"}function a(n,t){for(var r in t)n[r]=t[r]}function f(n){var t=n.match(W);return t?t[0]:n}function u(n,t){return h(f(t.p).slice(1),n)}function c(n,t){return n=u(n,t),n?t.k+"/"+n:t.k}function h(n,t){var r=(n+"/"+t).split("/").filter(Boolean);return s(r).join("/")}function s(n){for(var t=0,r=n.length-1;r>=0;r--){var i=n[r];"."===i?n.splice(r,1):".."===i?(n.splice(r,1),t++):t&&(n.splice(r,1),t--)}for(;t--;)n.unshift("..");return n}function l(n){return 0===n.indexOf("./")||0===n.indexOf("../")}function p(n){throw new Error("neuron: "+n)}function v(n){p("Cannot find module '"+n+"'")}function d(n){return X[n]||(X[n]=[])}function g(n,t){d(n).push(t)}function m(n,t){var r=d(n);r.forEach(function(n){n(t)})}function y(n,t){n||p("null id"),t||(t={});var r=t.map||{};n=r[n]||n;var a,f=l(n);if(f?(t.id||v(n),n=c(n,t),n=o(n,t),a=i(n)):(n=t.m&&t.m[n]||n,a=i(n)),a.k===t.k)a.graph=t.graph;else{var u=k(a.k,t.graph)||[];a.graph=u,a.v=u[0]||a.v,e(a)}return a}function k(n,t){var r=it.graph._,i=t?t[1]:r;return i&&n in i?it.graph[i[n]]:r}function w(n){return n.loaded?n.exports:O(n)}function O(n){n.loaded=!0;var t=n.exports={},r=A(n.id),i=f(r),e=n.factory;return e(R(n),t,n,r,i),n.exports}function b(n,t,r){var i=y(n,t),e=i.graph,o=E(i),a=o.main?i.k:i.id,f=e[a];return f||(!r||v(n),f=e[a]=j(o),f.graph=e,f.g||(f.g=Y++)),f}function x(n,t){J.ready(n,function(){t(w(n))})}function E(n){var t=n.id;return ot[t]||(ot[t]={n:n.n,v:n.v,p:n.p,id:t,k:n.k,m:{},l:[],main:!n.p})}function j(n){function t(){this.r=[]}return t.prototype=n,new t}function S(n){!~n.indexOf("@")||p("id with '@' is prohibited")}function R(n){var t=function(t){S(t);var r=b(t,n,!0);return w(r)};return t.async=function(t,r){var i=t;if(r){S(t);var e=l(t);if(e){t=c(t,n);var a=n.entries;t=a?$(t,a)||$(t+".js",a)||$(t+".json",a)||v(i):o(t,n)}var f=b(t,n);if(!f.main){if(!e)return;f.a=!0}x(f,r)}},t.resolve=function(t){if(l(t)&&(t=u(t,n),!~t.indexOf("../"))){var r=T(n.k,t);return t=N(t,r),A(n.k+"/"+t)}},t}function $(n,t){return~t.indexOf(n)?n:Q}function _(n){var t=Z.createElement("script");t.src=n,t.async=!0,tt(t,function(){nt.removeChild(t)}),setTimeout(function(){nt.insertBefore(t,nt.firstChild)},0)}function L(n,t,r,i){i||(i={});var f=y(n);f.p&&(f.p=o(f.p,i),e(f));var u,c=f.k;i.main&&(u=ot[c]);var h=ot[f.id]=u||ot[f.id]||E(f);if(i.main&&(ot[c]=h,a(h,f)),a(h,i),!h.factory){h.factory=r,h.deps=t,M(t,h.m);var s=i.asyncDeps;s&&M(s,h.m),B(h,"l")}}function M(n,t){n.forEach(function(n){var r=n.split("@")[0];t[r]=n})}function B(n,t){var r,i=n[t];for(n[t]=Q;r=i.pop();)r()}function C(n,t){var r=ot[n.id];r.f=n.f,r.a=n.a;var i=r.l;i&&(i.push(t),i.length<2&&I(r))}function I(n){if(!n.d){n.d=!0;var t=n.f,r=n.a,i=n.k;if(~rt.indexOf(i)){if(!t&&!r)return}else rt.push(i);var e=it.loaded,o=t?n.id:i;if(~e.indexOf(o)){if(!r)return}else e.push(o);_(P(n))}}function N(n,t){var r=n.match(/\.[\w\d]+$/)[0];return t?n.replace(new RegExp(r+"$"),"_"+t+r):n}function P(n){var t=T(n.k,n.main?n.n+".js":n.p.slice(1)),r=n.main?n.k+"/"+n.n+".js":n.id,i=A(r);return N(i,t)}function T(n,t){return it.hash&&it.hash[n]&&it.hash[n][t]}function A(n){var t=n.replace("@","/"),r=it.path;return r||p("config.path must be specified"),r=r.replace("{n}",t.length%3+1),r+t}function D(n,t,r){if(m("beforeready",z(n)+":"+n.g),!n.factory)return m("beforeload",n.id),C(n,function(){m("load",z(n)),D(n,t,r)});var i=n.deps,e=i.length,o=n.r;if(!e||!o)return n.r=Q,q(n),t();if(o.push(t),!(o.length>1)){var a=function(){--e||(r.length=0,r=K,q(n),B(n,"r"))};r=r?[n].concat(r):[n],i.forEach(function(t){var i=b(t,n);return~r.indexOf(i)?a():void D(i,a,r)})}}function q(n){m("ready",z(n)+":"+n.g)}function z(n){return n.main?n.k:n.id}function F(n){return n}function G(n){var t,r;for(t in n)r=et[t],r&&(it[t]=r(n[t]))}function H(n,t){var r=b(n);r.f=!0,x(r,t)}var J={version:"7.2.0"},K=null,Q=!1;J.ready=function(n,t){t()};var U=TypeError;r(Array,{indexOf:function(n,t){var r=this.length>>>0;for(t=Number(t)||0,t=Math[0>t?"ceil":"floor"](t),0>t&&(t=Math.max(t+r,0));r>t;t++)if(t in this&&this[t]===n)return t;return-1},lastIndexOf:function(n,t){var r=this.length>>>0;for(t=Number(t)||r-1,t=Math[0>t?"ceil":"floor"](t),0>t&&(t+=r),t=Math.min(t,r-1);t>=0;t--)if(t in this&&this[t]===n)return t;return-1},filter:function(n,t){for(var r=[],i=0,e=this.length;e>i;i++)i in this&&n.call(t,this[i],i,this)&&r.push(this[i]);return r},forEach:function(n,t){for(var r=0,i=this.length;i>r;r++)r in this&&n.call(t,this[r],r,this)},every:function(n,t){for(var r=0,i=this.length;i>r;r++)if(r in this&&!n.call(t,this[r],r,this))return!1;return!0},map:function(n,t){for(var r=[],i=0,e=this.length;e>i;i++)i in this&&(r[i]=n.call(t,this[i],i,this));return r},some:function(n,t){for(var r=0,i=this.length;i>r;r++)if(r in this&&n.call(t,this[r],r,this))return!0;return!1},reduce:function(n){if("function"!=typeof n)throw new U(n+" is not an function");var t,r=this,i=r.length>>>0,e=0;if(arguments.length>1)t=arguments[1];else for(;;){if(e in r){t=r[e++];break}if(++e>=i)throw new U("Reduce of empty array with on initial value")}for(;i>e;e++)e in r&&(t=n.call(K,t,r[e],e,r));return t},reduceRight:function(n){if("function"!=typeof n)throw new U(n+" is not an function");var t,r=this,i=r.length>>>0,e=i-1;if(arguments.length>1)t=arguments[1];else for(;;){if(e in r){t=r[e--];break}if(--e<0)throw new U("Reduce of empty array with on initial value")}for(;e>=0;e--)e in r&&(t=n.call(K,t,r[e],e,r));return t}}),t(Object,{keys:function(){var n=Object.prototype.hasOwnProperty,t=!{toString:""}.propertyIsEnumerable("toString"),r=["toString","toLocaleString","valueOf","hasOwnProperty","isPrototypeOf","propertyIsEnumerable","constructor"],i=r.length;return function(e){if(e!==Object(e))throw new U("Object.keys called on non-object");var o,a=[];for(o in e)n.call(e,o)&&a.push(o);if(t)for(var f=0;i>f;f++)n.call(e,r[f])&&a.push(r[f]);return a}}()}),r(String,{trimLeft:function(){return this.replace(/^\s+/,"")},trimRight:function(){return this.replace(/\s+$/,"")},trim:function(){return this.trimLeft().trimRight()}});var V=/^((?:[^\/])+?)(?:@([^\/]+))?(\/.*)?$/,W=/.*(?=\/.*$)/,X={};J.on=g;var Y=1,Z=document,nt=Z.getElementsByTagName("head")[0],tt=Z.createElement("script").readyState?function(n,t){n.onreadystatechange=function(){var r=n.readyState;("loaded"===r||"complete"===r)&&(n.onreadystatechange=K,t.call(this))}}:function(n,t){n.addEventListener("load",t,!1)},rt=[];J.ready=D;var it=J.conf={loaded:[],graph:{_:{}}},et={path:function(n){return n.replace(/\/*$/,"/")},hash:F,loaded:F,graph:F};J.config=G,n.neuron=J,n.define=L,n.facade=function(n){H(n.entry,function(t){t.init&&t.init(n.data)})},n._use=function(n,t){H(n,t)},n._load=_;var ot=J.mods={}}(this);</script><script>neuron.config({path: "http://m1.s2.dpfile.com/mod", loaded:["app-m-tuangou@1.2.29/js/page/detail.js","wepp-module-event@0.2.1","iscroll@5.0.11","cookie@0.1.2","xss@0.1.0","openapp@0.1.7","underscore@1.5.3","mobile-common-nav@1.1.0","fun-base-theme@0.1.3","tpl@0.2.1","mobile-common@0.1.27","easy-login@0.2.9","mobile-common-search@0.4.3","huatuo@0.1.10","base-m-lazyload@2.0.4","mobile-download-banner@0.1.13","wepp-module-toast@0.1.5","ktv-structure-static@0.1.11"], graph:{"0":["1.2.29",{"mobile-download-banner@~0.1.0":1,"tpl@~0.2.1":5,"fun-base-theme@~0.1.3":6,"wepp-module-toast@~0.1.0":7,"mobile-common@~0.1.0":10,"underscore@~1.5.0":11,"cookie@~0.1.0":4,"openapp@~0.1.3":2,"base-m-lazyload@^2.0.1":12,"ktv-structure-static@~0.1.11":13,"huatuo@~0.1.6":14,"mobile-common-search@~0.4.3":15,"mobile-common-nav@~1.1.0":17,"zepto-wepp@~1.1.0":3,"easy-login@~0.2.3":19}],"1":["0.1.13",{"openapp@~0.1.1":2,"zepto-wepp@~1.1.4":3,"cookie@~0.1.2":4}],"2":["0.1.7"],"3":["1.1.6"],"4":["0.1.2"],"5":["0.2.1"],"6":["0.1.3"],"7":["0.1.5",{"wepp-module-overlay@~0.2.0":8,"zepto-wepp@~1.1.0":3}],"8":["0.2.2",{"wepp-module-event@~0.2.0":9,"zepto-wepp@~1.1.0":3}],"9":["0.2.1"],"10":["0.1.27",{"cookie@~0.1.0":4,"zepto-wepp@~1.1.0":3}],"11":["1.5.3"],"12":["2.0.4",{"zepto-wepp@~1.1.3":3}],"13":["0.1.11",{"underscore@^1.5.3":11,"zepto-wepp@^1.1.6":3}],"14":["0.1.10"],"15":["0.4.3",{"xss@~0.1.0":16,"zepto-wepp@~1.1.4":3}],"16":["0.1.0"],"17":["1.1.0",{"wepp-module-overlay@~0.2.0":8,"zepto-wepp@~1.1.4":3,"iscroll@~5.0.10":18}],"18":["5.0.11"],"19":["0.2.9"],"_":{"app-m-tuangou@*":0}}})</script>
+        <script async="" src="http://m1.s2.dpfile.com/concat/~mod~app-m-tuangou~1.2.29~js~page~detail.js,~mod~wepp-module-event~0.2.1~wepp-module-event.js,~mod~iscroll~5.0.11~iscroll.js,~mod~cookie~0.1.2~cookie.js,~mod~xss~0.1.0~xss.js,~mod~openapp~0.1.7~openapp.js,~mod~underscore~1.5.3~underscore.js,~mod~mobile-common-nav~1.1.0~mobile-common-nav.js,~mod~fun-base-theme~0.1.3~fun-base-theme.js,~mod~tpl~0.2.1~tpl.js,~mod~mobile-common~0.1.27~mobile-common.js,~mod~easy-login~0.2.9~easy-login.js,~mod~mobile-common-search~0.4.3~mobile-common-search.js,~mod~huatuo~0.1.10~huatuo.js,~mod~base-m-lazyload~2.0.4~base-m-lazyload.js,~mod~mobile-download-banner~0.1.13~mobile-download-banner.js,~mod~wepp-module-toast~0.1.5~wepp-module-toast.js,~mod~ktv-structure-static~0.1.11~ktv-structure-static.js"></script>
+        <script>
+            facade({entry:"app-m-tuangou/js/page/detail.js"});
+            </script>
+        
+        <footer class="footer">
+            <a href="/tuan">首页</a><em>|</em>
+            <a href="/tuan/receiptlist">我的点评团</a><em>|</em>
+            <a href="http://www.dianping.com/events/m/index.htm">客户端</a><em>|</em>
+            <br>
+            <a href="http://t.dianping.com">电脑版</a><em>|</em>
+            <a href="http://m.dianping.com">大众点评网</a><em>|</em>
+            <a href="http://m.dianping.com/tuan/feedback">意见反馈</a>
+            <br>
+            <p class="copyright">copyright 2014 dianping.com</p>
+            <iframe id="J_shop_frameMobile" frameborder="0" src="" style="display:none"></iframe></footer></body></html>
+2015-06-30 14:47:05.044 火团[2752:142441] <html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+            <meta charset="utf-8">
+                <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+                    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+                        <meta name="format-detection" content="telephone=no">
+                            <meta name="format-detection" content="email=no">
+                                <meta name="apple-mobile-web-app-capable" content="yes">
+                                    <meta name="apple-mobile-web-app-title" content="点评团购触屏版 -上海团购-大众点评团上海站">
+                                        <meta name="apple-itunes-app" content="app-id=351091731">
+                                            <link rel="apple-touch-startup-image" size="640x920" href="http://m1.s2.dpfile.com/m/img/app/tuangou/startup4.8edce79bb20fe844f45c989336e5935e.png" media="(device-height:480px)">
+                                                <link rel="apple-touch-startup-image" href="http://m1.s2.dpfile.com/m/img/app/tuangou/startup5.100ee1ca3bfbcf9c295ce8cc91659f60.png" media="(device-height:568px)">
+                                                    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://m1.s2.dpfile.com/m/img/app/tuangou/apple-touch-icon-57x57.b65964186a2866605deb078a5e8d31be.png">
+                                                        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://m1.s2.dpfile.com/m/img/app/tuangou/apple-touch-icon-72x72.6956ac9c5c482a13efe1b6bd06e717b6.png">
+                                                            <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://m1.s2.dpfile.com/m/img/app/tuangou/apple-touch-icon-114x114.5e782d534b6f7c3f7d928832f0f83613.png">
+                                                                <title>团购详情-大众点评团上海站</title>
+                                                                <script>var G_rtop=+new Date,_gaq=[
+                                                                                                   ['_setAccount','UA-16496742-2'],
+                                                                                                   ['_addOrganic','soso','w'],
+                                                                                                   ['_addOrganic','sogou','query'],
+                                                                                                   ['_addOrganic','yodao','q'],
+                                                                                                   ['_addOrganic','bing','q'],
+                                                                                                   ['_addOrganic','360','q'],
+                                                                                                   ['_addOrganic','gougou','search'],
+                                                                                                   ['_setDomainName', 'm.dianping.com'],
+                                                                                                   ['_setAllowHash', false]]
+                                                                                                   dpga=function(key){_gaq.push(['_trackPageview', key||''])},
+                                                                                                   pageTracker={_trackPageview:dpga},_hip=[
+                                                                                                                                           ['_setPageId', 171020],
+                                                                                                                                           ['_setCityId', 1],
+                                                                                                                                           ['_setPVInitData', '']
+                                                                                                                                           ];
+                                                                    </script>
+                                                                
+                                                                
+                                                                <script>
+                                                                    //for weixin share
+                                                                    function weixinShare(type){
+                                                                        var appid = 'wx841a97238d9e17b2';
+                                                                        var img_url = "http://m1.s1.dpfile.com/sc/2014/mobile_pay5/dp_icon_100.png";
+                                                                        var link = window.location.href;
+                                                                        var desc = '团购详情-大众点评团上海站';
+                                                                        var title = '大众点评团';
+                                                                        var shareFriend = function () {
+                                                                            WeixinJSBridge.invoke('sendAppMessage',{
+                                                                                                  "appid":appid,
+                                                                                                  "img_url":img_url,
+                                                                                                  "img_width":"640",
+                                                                                                  "img_height":"640",
+                                                                                                  "link":link,
+                                                                                                  "desc":desc,
+                                                                                                  "title":title
+                                                                                                  },function(res) {
+                                                                                                  _report('send_msg', res.err_msg);
+                                                                                                  })
+                                                                        }
+                                                                        var shareTimeline = function () {
+                                                                            WeixinJSBridge.invoke('shareTimeline',{
+                                                                                                  "appid":appid,
+                                                                                                  "img_url":img_url,
+                                                                                                  "img_width":"640",
+                                                                                                  "img_height":"640",
+                                                                                                  "link":link,
+                                                                                                  "desc":desc,
+                                                                                                  "title":title
+                                                                                                  },function(res) {
+                                                                                                  _report('timeline', res.err_msg);
+                                                                                                  });
+                                                                        }
+                                                                        if(type == 'friend'){
+                                                                            return shareFriend;
+                                                                        }else if(type == 'timeline'){
+                                                                            return shareTimeline;
+                                                                        }
+                                                                    }
+                                                                
+                                                                var shareFriend = weixinShare('friend');
+                                                                var shareTimeline = weixinShare('timeline');
+                                                                document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+                                                                                          WeixinJSBridge.on('menu:share:appmessage', function(argv){
+                                                                                                            shareFriend();
+                                                                                                            });
+                                                                                          WeixinJSBridge.on('menu:share:timeline', function(argv){
+                                                                                                            shareTimeline();
+                                                                                                            });
+                                                                                          WeixinJSBridge.invoke("getInstallState",{
+                                                                                                                "packageUrl": "dianping://home",
+                                                                                                                "packageName": "com.dianping.v1"
+                                                                                                                },function(res){
+                                                                                                                });
+                                                                                          }, false);
+                                                                    </script>
+</head>
+
+<body>
+    <link rel="stylesheet" href="http://m1.s2.dpfile.com/concat/~mod~fun-base-theme~0.1.3~css~style.css,~mod~easy-login~0.2.9~css~style.css,~mod~mobile-common-search~0.4.3~css~style.css,~mod~mobile-download-banner~0.1.13~css~style.css,~mod~ktv-structure-static~0.1.11~css~style.css,~mod~app-m-tuangou~1.2.29~css~style.css" type="text/css">
+        
+        <div class="cost-box">
+            <div class="buy-box">
+                <div class="price">¥</div>
+                <div class="price sum">180</div>
+                <div class="past Fix">
+                    <div class="t">
+                        <span class="o-price">¥200</span>
+                    </div>
+                </div>
+                
+                
+                <div class="last">
+                    <a onclick="_hip.push(['mv', {module: '5_button_buy', action:'click', type:'up', dealgrp_id:'12469311'}]);" href="/tuan/buy/12484550" class="buy-btn ">
+                        立即购买
+                    </a>
+                </div>
+            </div>	</div>
+        
+        <div class="detail-info group-detail">
+            <div class="con">
+                <div class="info Fix">
+                    <div class="detail-box"><h3 class="tit">团购详情</h3><div class="detail-tit"></div>
+                        <table width="100%" cellpadding="0" cellspacing="0" class="detail-table">
+                            <thead>
+                                <tr>
+                                    <th width="50%">名称</th>
+                                    <th width="25%">数量</th>
+                                    <th width="25%">单价</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>代金券</td>
+                                    <td class="tc">1张</td>
+                                    <td class="tc">200元</td>
+                                </tr>
+                                <tr class="total">
+                                    <td></td>
+                                    <td class="tc">总价值<br><strong>团购价</strong></td>
+                                    <td class="tc">200元<br><strong>180元</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="detail-info buy-know">
+            <div class="con">
+                <div class="detail-box"><h3 class="tit">购买须知</h3><div class="detail-box">
+                    <div class="purchase-notes">
+                        <dl>
+                            <dt>有效期</dt>
+                            <dd>
+                                <p class="listitem">2015-06-18至2015-08-31</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>除外日期</dt>
+                            <dd>
+                                <p class="listitem">2015-06-20至2015-06-22不可用</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>使用时间</dt>
+                            <dd>
+                                <p class="listitem">仅限周一至周五使用，6月27日-6月28日本周末可用，其他周末及法定假日不可用</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>预约信息</dt>
+                            <dd>
+                                <p class="listitem">无需预约，如遇消费高峰时段您可能需要排队</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>堂食外带</dt>
+                            <dd>
+                                <p class="listitem">本单只适用于堂食，只适用于大厅使用，敬请谅解</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>规则提醒</dt>
+                            <dd>
+                                <p class="listitem">可累积使用，不兑现，不找零</p>
+                                <p class="listitem">全场通用</p>
+                                <p class="listitem">不再与其他优惠同享</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>温馨提示</dt>
+                            <dd>
+                                <p class="listitem">如需团购券发票，请您在消费时向商户咨询</p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="detail-info group-detail">
+            <div class="con">
+                <div class="info Fix">
+                    <div class="detail-box"><h3 class="tit">产品介绍</h3><p class="listitem">乡巴佬鸡</p>
+                        <p class="explain"></p>
+                        <div class="img"><img src="http://t2.s2.dpfile.com/pc/mc/5ed906674f59971e87da1bee3e015f3f(640x1024)/thumb.jpg"></div>
+                        <p class="listitem">蛋黄鸡翅</p>
+                        <p class="explain"></p>
+                        <div class="img"><img src="http://t2.s2.dpfile.com/pc/mc/c1d14c4467a983e55dc8d48b677c79f3(640x1024)/thumb.jpg"></div>
+                        <p class="listitem">口水虾</p>
+                        <p class="explain"></p>
+                        <div class="img"><img src="http://t3.s1.dpfile.com/pc/mc/8f12476842cfec114632911e66649009(640x1024)/thumb.jpg"></div>
+                        <p class="listitem">清炖牛肉</p>
+                        <p class="explain"></p>
+                        <div class="img"><img src="http://t3.s1.dpfile.com/pc/mc/d9f03a2c5a5b84c9523929f4483f5f1d(640x1024)/thumb.jpg"></div>
+                        <p class="listitem">腊鸭舌</p>
+                        <p class="explain"></p>
+                        <div class="img"><img src="http://t1.s2.dpfile.com/pc/mc/23d32e25165e0fe74fd1ce649aad3c06(640x1024)/thumb.jpg"></div>
+                        <p class="listitem">剁椒鱼头</p>
+                        <p class="explain"></p>
+                        <div class="img"><img src="http://t2.s2.dpfile.com/pc/mc/0cf8eb2ee91f26f6dc77373b7d09962c(640x1024)/thumb.jpg"></div>
+                        <p class="listitem">雪花排条</p>
+                        <p class="explain"></p>
+                        <div class="img"><img src="http://t1.s2.dpfile.com/pc/mc/24625456b937f05a7e17301926fb0793(640x1024)/thumb.jpg"></div>
+                        <p class="listitem">肥牛一锅鲜</p>
+                        <p class="explain"></p>
+                        <div class="img"><img src="http://t2.s2.dpfile.com/pc/mc/04614a40c57095c7e3703e3425b7ec41(640x1024)/thumb.jpg"></div>
+                        <p class="listitem">子排炒年糕</p>
+                        <p class="explain"></p>
+                        <div class="img"><img src="http://t2.s2.dpfile.com/pc/mc/a8f9be26a631eaac8899a7d71466fe43(640x1024)/thumb.jpg"></div>
+                        <p class="listitem">干菜刀豆</p>
+                        <p class="explain"></p>
+                        <div class="img"><img src="http://t1.s2.dpfile.com/pc/mc/639b53e919de525ef6d8593df3538a79(640x1024)/thumb.jpg"></div>
+                        <p class="listitem">滑口千张</p>
+                        <p class="explain"></p>
+                        <div class="img"><img src="http://t1.s1.dpfile.com/pc/mc/abe8fdcc87bf8717c3f0bbeda1cf5425(640x1024)/thumb.jpg"></div>
+                        <p class="listitem">响铃脆香肉</p>
+                        <p class="explain"></p>
+                        <div class="img"><img src="http://t1.s2.dpfile.com/pc/mc/7875f9dbdc8a94152f2568711b71f4ea(640x1024)/thumb.jpg"></div>
+                        <p class="listitem">特色牛肉卷</p>
+                        <p class="explain"></p>
+                        <div class="img"><img src="http://t1.s1.dpfile.com/pc/mc/4cdd8ece999efd8813c4ebb6a5a79852(640x1024)/thumb.jpg"></div>
+                        <p class="listitem">蜜汁南瓜</p>
+                        <p class="explain"></p>
+                        <div class="img"><img src="http://t3.s2.dpfile.com/pc/mc/f2447a3dab65b069d18b6f875a4a64b4(640x1024)/thumb.jpg"></div>
+                        <p class="listitem">香脆蛋酥</p>
+                        <p class="explain"></p>
+                        <div class="img"><img src="http://t2.s2.dpfile.com/pc/mc/3d9e9d320432ce81a49d52a118e87043(640x1024)/thumb.jpg"></div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="detail-info group-detail">
+            <div class="con">
+                <div class="info Fix">
+                    <div class="detail-box"><h3 class="tit">商户介绍</h3><div>　　新白鹿，一家尊享生活饮食格调的餐厅，精美的装修，时尚的混搭，体验各种舒适的感觉，抓住每个精彩的瞬间。换种方式、换种心情，精彩立即上演。在这里，纳众多美食，汇独特风味，“汤鲜”、“鱼嫩”、“虾肥”，不断挑逗你的味蕾，品尝、咀嚼，感触美食新的时尚。真切的问候，用心的服务，满足食客的需求。新白鹿，新鲜你的饮食生活！ </div>
+                        <p class="listitem"></p>
+                        <p class="explain"></p>
+                        <div class="img"><img src="http://t1.s2.dpfile.com/pc/mc/4c6ceb4ccae8af22901393d6394daef8(640x1024)/thumb.jpg"></div>
+                        <p class="listitem"></p>
+                        <p class="explain"></p>
+                        <div class="img"><img src="http://t3.s1.dpfile.com/pc/mc/35ff487bb28a199f0e52d27168b33fcd(640x1024)/thumb.jpg"></div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <a onclick="_hip.push(['mv', {module: '5_button_buy', action:'click', type:'down', dealgrp_id:'12469311'}]);" href="/tuan/buy/12484550" class="buy-now ">
+            <span>¥180</span>
+            <span>立即购买</span>
+        </a>
+        
+        <script type="text/javascript">_gaq.push(['_trackPageview', 'dealdetail/上海']);</script>
+        
+        <script>!function(n){"use strict";function t(n,t){for(var r in t)n[r]||(n[r]=t[r])}function r(n,r){t(n.prototype,r)}function i(n){var t=n.match(V),r=t[1],i=t[2]||"*",o=t[3]||"";return e({n:r,v:i,p:o})}function e(n){var t=n.n+"@"+n.v;return n.id=t+n.p,n.k=t,n}function o(n,t){return t.map?n:n+".js"}function a(n,t){for(var r in t)n[r]=t[r]}function f(n){var t=n.match(W);return t?t[0]:n}function u(n,t){return h(f(t.p).slice(1),n)}function c(n,t){return n=u(n,t),n?t.k+"/"+n:t.k}function h(n,t){var r=(n+"/"+t).split("/").filter(Boolean);return s(r).join("/")}function s(n){for(var t=0,r=n.length-1;r>=0;r--){var i=n[r];"."===i?n.splice(r,1):".."===i?(n.splice(r,1),t++):t&&(n.splice(r,1),t--)}for(;t--;)n.unshift("..");return n}function l(n){return 0===n.indexOf("./")||0===n.indexOf("../")}function p(n){throw new Error("neuron: "+n)}function v(n){p("Cannot find module '"+n+"'")}function d(n){return X[n]||(X[n]=[])}function g(n,t){d(n).push(t)}function m(n,t){var r=d(n);r.forEach(function(n){n(t)})}function y(n,t){n||p("null id"),t||(t={});var r=t.map||{};n=r[n]||n;var a,f=l(n);if(f?(t.id||v(n),n=c(n,t),n=o(n,t),a=i(n)):(n=t.m&&t.m[n]||n,a=i(n)),a.k===t.k)a.graph=t.graph;else{var u=k(a.k,t.graph)||[];a.graph=u,a.v=u[0]||a.v,e(a)}return a}function k(n,t){var r=it.graph._,i=t?t[1]:r;return i&&n in i?it.graph[i[n]]:r}function w(n){return n.loaded?n.exports:O(n)}function O(n){n.loaded=!0;var t=n.exports={},r=A(n.id),i=f(r),e=n.factory;return e(R(n),t,n,r,i),n.exports}function b(n,t,r){var i=y(n,t),e=i.graph,o=E(i),a=o.main?i.k:i.id,f=e[a];return f||(!r||v(n),f=e[a]=j(o),f.graph=e,f.g||(f.g=Y++)),f}function x(n,t){J.ready(n,function(){t(w(n))})}function E(n){var t=n.id;return ot[t]||(ot[t]={n:n.n,v:n.v,p:n.p,id:t,k:n.k,m:{},l:[],main:!n.p})}function j(n){function t(){this.r=[]}return t.prototype=n,new t}function S(n){!~n.indexOf("@")||p("id with '@' is prohibited")}function R(n){var t=function(t){S(t);var r=b(t,n,!0);return w(r)};return t.async=function(t,r){var i=t;if(r){S(t);var e=l(t);if(e){t=c(t,n);var a=n.entries;t=a?$(t,a)||$(t+".js",a)||$(t+".json",a)||v(i):o(t,n)}var f=b(t,n);if(!f.main){if(!e)return;f.a=!0}x(f,r)}},t.resolve=function(t){if(l(t)&&(t=u(t,n),!~t.indexOf("../"))){var r=T(n.k,t);return t=N(t,r),A(n.k+"/"+t)}},t}function $(n,t){return~t.indexOf(n)?n:Q}function _(n){var t=Z.createElement("script");t.src=n,t.async=!0,tt(t,function(){nt.removeChild(t)}),setTimeout(function(){nt.insertBefore(t,nt.firstChild)},0)}function L(n,t,r,i){i||(i={});var f=y(n);f.p&&(f.p=o(f.p,i),e(f));var u,c=f.k;i.main&&(u=ot[c]);var h=ot[f.id]=u||ot[f.id]||E(f);if(i.main&&(ot[c]=h,a(h,f)),a(h,i),!h.factory){h.factory=r,h.deps=t,M(t,h.m);var s=i.asyncDeps;s&&M(s,h.m),B(h,"l")}}function M(n,t){n.forEach(function(n){var r=n.split("@")[0];t[r]=n})}function B(n,t){var r,i=n[t];for(n[t]=Q;r=i.pop();)r()}function C(n,t){var r=ot[n.id];r.f=n.f,r.a=n.a;var i=r.l;i&&(i.push(t),i.length<2&&I(r))}function I(n){if(!n.d){n.d=!0;var t=n.f,r=n.a,i=n.k;if(~rt.indexOf(i)){if(!t&&!r)return}else rt.push(i);var e=it.loaded,o=t?n.id:i;if(~e.indexOf(o)){if(!r)return}else e.push(o);_(P(n))}}function N(n,t){var r=n.match(/\.[\w\d]+$/)[0];return t?n.replace(new RegExp(r+"$"),"_"+t+r):n}function P(n){var t=T(n.k,n.main?n.n+".js":n.p.slice(1)),r=n.main?n.k+"/"+n.n+".js":n.id,i=A(r);return N(i,t)}function T(n,t){return it.hash&&it.hash[n]&&it.hash[n][t]}function A(n){var t=n.replace("@","/"),r=it.path;return r||p("config.path must be specified"),r=r.replace("{n}",t.length%3+1),r+t}function D(n,t,r){if(m("beforeready",z(n)+":"+n.g),!n.factory)return m("beforeload",n.id),C(n,function(){m("load",z(n)),D(n,t,r)});var i=n.deps,e=i.length,o=n.r;if(!e||!o)return n.r=Q,q(n),t();if(o.push(t),!(o.length>1)){var a=function(){--e||(r.length=0,r=K,q(n),B(n,"r"))};r=r?[n].concat(r):[n],i.forEach(function(t){var i=b(t,n);return~r.indexOf(i)?a():void D(i,a,r)})}}function q(n){m("ready",z(n)+":"+n.g)}function z(n){return n.main?n.k:n.id}function F(n){return n}function G(n){var t,r;for(t in n)r=et[t],r&&(it[t]=r(n[t]))}function H(n,t){var r=b(n);r.f=!0,x(r,t)}var J={version:"7.2.0"},K=null,Q=!1;J.ready=function(n,t){t()};var U=TypeError;r(Array,{indexOf:function(n,t){var r=this.length>>>0;for(t=Number(t)||0,t=Math[0>t?"ceil":"floor"](t),0>t&&(t=Math.max(t+r,0));r>t;t++)if(t in this&&this[t]===n)return t;return-1},lastIndexOf:function(n,t){var r=this.length>>>0;for(t=Number(t)||r-1,t=Math[0>t?"ceil":"floor"](t),0>t&&(t+=r),t=Math.min(t,r-1);t>=0;t--)if(t in this&&this[t]===n)return t;return-1},filter:function(n,t){for(var r=[],i=0,e=this.length;e>i;i++)i in this&&n.call(t,this[i],i,this)&&r.push(this[i]);return r},forEach:function(n,t){for(var r=0,i=this.length;i>r;r++)r in this&&n.call(t,this[r],r,this)},every:function(n,t){for(var r=0,i=this.length;i>r;r++)if(r in this&&!n.call(t,this[r],r,this))return!1;return!0},map:function(n,t){for(var r=[],i=0,e=this.length;e>i;i++)i in this&&(r[i]=n.call(t,this[i],i,this));return r},some:function(n,t){for(var r=0,i=this.length;i>r;r++)if(r in this&&n.call(t,this[r],r,this))return!0;return!1},reduce:function(n){if("function"!=typeof n)throw new U(n+" is not an function");var t,r=this,i=r.length>>>0,e=0;if(arguments.length>1)t=arguments[1];else for(;;){if(e in r){t=r[e++];break}if(++e>=i)throw new U("Reduce of empty array with on initial value")}for(;i>e;e++)e in r&&(t=n.call(K,t,r[e],e,r));return t},reduceRight:function(n){if("function"!=typeof n)throw new U(n+" is not an function");var t,r=this,i=r.length>>>0,e=i-1;if(arguments.length>1)t=arguments[1];else for(;;){if(e in r){t=r[e--];break}if(--e<0)throw new U("Reduce of empty array with on initial value")}for(;e>=0;e--)e in r&&(t=n.call(K,t,r[e],e,r));return t}}),t(Object,{keys:function(){var n=Object.prototype.hasOwnProperty,t=!{toString:""}.propertyIsEnumerable("toString"),r=["toString","toLocaleString","valueOf","hasOwnProperty","isPrototypeOf","propertyIsEnumerable","constructor"],i=r.length;return function(e){if(e!==Object(e))throw new U("Object.keys called on non-object");var o,a=[];for(o in e)n.call(e,o)&&a.push(o);if(t)for(var f=0;i>f;f++)n.call(e,r[f])&&a.push(r[f]);return a}}()}),r(String,{trimLeft:function(){return this.replace(/^\s+/,"")},trimRight:function(){return this.replace(/\s+$/,"")},trim:function(){return this.trimLeft().trimRight()}});var V=/^((?:[^\/])+?)(?:@([^\/]+))?(\/.*)?$/,W=/.*(?=\/.*$)/,X={};J.on=g;var Y=1,Z=document,nt=Z.getElementsByTagName("head")[0],tt=Z.createElement("script").readyState?function(n,t){n.onreadystatechange=function(){var r=n.readyState;("loaded"===r||"complete"===r)&&(n.onreadystatechange=K,t.call(this))}}:function(n,t){n.addEventListener("load",t,!1)},rt=[];J.ready=D;var it=J.conf={loaded:[],graph:{_:{}}},et={path:function(n){return n.replace(/\/*$/,"/")},hash:F,loaded:F,graph:F};J.config=G,n.neuron=J,n.define=L,n.facade=function(n){H(n.entry,function(t){t.init&&t.init(n.data)})},n._use=function(n,t){H(n,t)},n._load=_;var ot=J.mods={}}(this);</script><script>neuron.config({path: "http://m1.s2.dpfile.com/mod", loaded:["app-m-tuangou@1.2.29/js/page/detail.js","wepp-module-event@0.2.1","iscroll@5.0.11","cookie@0.1.2","xss@0.1.0","openapp@0.1.7","underscore@1.5.3","mobile-common-nav@1.1.0","fun-base-theme@0.1.3","tpl@0.2.1","mobile-common@0.1.27","easy-login@0.2.9","mobile-common-search@0.4.3","huatuo@0.1.10","base-m-lazyload@2.0.4","mobile-download-banner@0.1.13","wepp-module-toast@0.1.5","ktv-structure-static@0.1.11"], graph:{"0":["1.2.29",{"mobile-download-banner@~0.1.0":1,"tpl@~0.2.1":5,"fun-base-theme@~0.1.3":6,"wepp-module-toast@~0.1.0":7,"mobile-common@~0.1.0":10,"underscore@~1.5.0":11,"cookie@~0.1.0":4,"openapp@~0.1.3":2,"base-m-lazyload@^2.0.1":12,"ktv-structure-static@~0.1.11":13,"huatuo@~0.1.6":14,"mobile-common-search@~0.4.3":15,"mobile-common-nav@~1.1.0":17,"zepto-wepp@~1.1.0":3,"easy-login@~0.2.3":19}],"1":["0.1.13",{"openapp@~0.1.1":2,"zepto-wepp@~1.1.4":3,"cookie@~0.1.2":4}],"2":["0.1.7"],"3":["1.1.6"],"4":["0.1.2"],"5":["0.2.1"],"6":["0.1.3"],"7":["0.1.5",{"wepp-module-overlay@~0.2.0":8,"zepto-wepp@~1.1.0":3}],"8":["0.2.2",{"wepp-module-event@~0.2.0":9,"zepto-wepp@~1.1.0":3}],"9":["0.2.1"],"10":["0.1.27",{"cookie@~0.1.0":4,"zepto-wepp@~1.1.0":3}],"11":["1.5.3"],"12":["2.0.4",{"zepto-wepp@~1.1.3":3}],"13":["0.1.11",{"underscore@^1.5.3":11,"zepto-wepp@^1.1.6":3}],"14":["0.1.10"],"15":["0.4.3",{"xss@~0.1.0":16,"zepto-wepp@~1.1.4":3}],"16":["0.1.0"],"17":["1.1.0",{"wepp-module-overlay@~0.2.0":8,"zepto-wepp@~1.1.4":3,"iscroll@~5.0.10":18}],"18":["5.0.11"],"19":["0.2.9"],"_":{"app-m-tuangou@*":0}}})</script>
+        <script async="" src="http://m1.s2.dpfile.com/concat/~mod~app-m-tuangou~1.2.29~js~page~detail.js,~mod~wepp-module-event~0.2.1~wepp-module-event.js,~mod~iscroll~5.0.11~iscroll.js,~mod~cookie~0.1.2~cookie.js,~mod~xss~0.1.0~xss.js,~mod~openapp~0.1.7~openapp.js,~mod~underscore~1.5.3~underscore.js,~mod~mobile-common-nav~1.1.0~mobile-common-nav.js,~mod~fun-base-theme~0.1.3~fun-base-theme.js,~mod~tpl~0.2.1~tpl.js,~mod~mobile-common~0.1.27~mobile-common.js,~mod~easy-login~0.2.9~easy-login.js,~mod~mobile-common-search~0.4.3~mobile-common-search.js,~mod~huatuo~0.1.10~huatuo.js,~mod~base-m-lazyload~2.0.4~base-m-lazyload.js,~mod~mobile-download-banner~0.1.13~mobile-download-banner.js,~mod~wepp-module-toast~0.1.5~wepp-module-toast.js,~mod~ktv-structure-static~0.1.11~ktv-structure-static.js"></script>
+        <script>
+            facade({entry:"app-m-tuangou/js/page/detail.js"});
+            </script>
+        
+        <footer class="footer">
+            <a href="/tuan">首页</a><em>|</em>
+            <a href="/tuan/receiptlist">我的点评团</a><em>|</em>
+            <a href="http://www.dianping.com/events/m/index.htm">客户端</a><em>|</em>
+            <br>
+            <a href="http://t.dianping.com">电脑版</a><em>|</em>
+            <a href="http://m.dianping.com">大众点评网</a><em>|</em>
+            <a href="http://m.dianping.com/tuan/feedback">意见反馈</a>
+            <br>
+            <p class="copyright">copyright 2014 dianping.com</p>
+            <iframe id="J_shop_frameMobile" frameborder="0" src="" style="display:none"></iframe>
+        </footer>
+        
+        <script type="text/javascript" src="http://m1.s2.dpfile.com/hls/hippo2.min.376e5aee201f773050a4842e4fd097c4.js"></script>
+        
+        <script>
+            try{
+                window.onload =function(){
+                    document.body.scrollTop = 1;
+                }
+            }catch(e){
+                
+            }
+        </script>
+</body></html>

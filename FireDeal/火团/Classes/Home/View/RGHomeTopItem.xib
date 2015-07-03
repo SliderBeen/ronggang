@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RGHomeTopItem">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="30"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VZ1-bO-ESf">
+                    <rect key="frame" x="5" y="5" width="1" height="20"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="WKv-bu-epM"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQw-u7-Yi3">
+                    <rect key="frame" x="46" y="0.0" width="109" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="3Jh-43-dEX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="内容" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDa-ho-ZWZ">
+                    <rect key="frame" x="46" y="15" width="109" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="r6n-gG-nPE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9OK-Nj-BUq">
+                    <rect key="frame" x="0.0" y="0.0" width="160" height="30"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" image="icon_district">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="icon_district_highlighted"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="UDa-ho-ZWZ" secondAttribute="trailing" constant="5" id="53E-3L-Lck"/>
+                <constraint firstAttribute="trailing" secondItem="JQw-u7-Yi3" secondAttribute="trailing" constant="5" id="6Ki-Wq-iVn"/>
+                <constraint firstItem="UDa-ho-ZWZ" firstAttribute="leading" secondItem="VZ1-bO-ESf" secondAttribute="trailing" constant="40" id="8j3-vh-aTK"/>
+                <constraint firstAttribute="bottom" secondItem="9OK-Nj-BUq" secondAttribute="bottom" id="A8Q-0U-yJr"/>
+                <constraint firstItem="9OK-Nj-BUq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Akx-CA-mce"/>
+                <constraint firstAttribute="trailing" secondItem="9OK-Nj-BUq" secondAttribute="trailing" id="GLh-pp-xr6"/>
+                <constraint firstItem="JQw-u7-Yi3" firstAttribute="leading" secondItem="VZ1-bO-ESf" secondAttribute="trailing" constant="40" id="KXE-UO-nnt"/>
+                <constraint firstItem="VZ1-bO-ESf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="RHq-bm-fsS"/>
+                <constraint firstItem="VZ1-bO-ESf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="X71-Tl-Tij"/>
+                <constraint firstItem="9OK-Nj-BUq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="YS5-b4-BXC"/>
+                <constraint firstAttribute="bottom" secondItem="UDa-ho-ZWZ" secondAttribute="bottom" id="dP7-KF-4ZC"/>
+                <constraint firstItem="JQw-u7-Yi3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dn3-uF-gvY"/>
+                <constraint firstAttribute="bottom" secondItem="VZ1-bO-ESf" secondAttribute="bottom" constant="5" id="zDB-uR-j8R"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="iconButton" destination="9OK-Nj-BUq" id="GLn-kh-JUY"/>
+                <outlet property="subTitleLabel" destination="UDa-ho-ZWZ" id="bCB-Xp-WcY"/>
+                <outlet property="titleLabel" destination="JQw-u7-Yi3" id="IHO-Ex-ENc"/>
+            </connections>
+            <point key="canvasLocation" x="350" y="278"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_district" width="30" height="30"/>
+        <image name="icon_district_highlighted" width="30" height="30"/>
+    </resources>
+</document>

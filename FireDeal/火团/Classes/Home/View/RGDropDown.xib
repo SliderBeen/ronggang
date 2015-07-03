@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RGDropDown">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="360"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="9xv-yV-bZP">
+                    <rect key="frame" x="200" y="0.0" width="200" height="360"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="2up-yN-70c"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="QDm-Fj-c0n"/>
+                    </connections>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="cNg-hP-jh1">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="360"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="rX7-RW-jzw"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="JGq-1g-d1Z"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="cNg-hP-jh1" firstAttribute="width" secondItem="9xv-yV-bZP" secondAttribute="width" id="1Sq-5w-UPf"/>
+                <constraint firstAttribute="bottom" secondItem="cNg-hP-jh1" secondAttribute="bottom" id="E2E-lK-V6u"/>
+                <constraint firstItem="9xv-yV-bZP" firstAttribute="leading" secondItem="cNg-hP-jh1" secondAttribute="trailing" id="Hgz-Pp-zcT"/>
+                <constraint firstAttribute="bottom" secondItem="9xv-yV-bZP" secondAttribute="bottom" id="JBj-R6-SgY"/>
+                <constraint firstItem="cNg-hP-jh1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bwU-Em-e1w"/>
+                <constraint firstAttribute="trailing" secondItem="9xv-yV-bZP" secondAttribute="trailing" id="gTS-bP-2MM"/>
+                <constraint firstItem="9xv-yV-bZP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mg5-8E-UwQ"/>
+                <constraint firstItem="cNg-hP-jh1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xCY-zJ-aAo"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="mainTableView" destination="cNg-hP-jh1" id="5Y9-4T-KBd"/>
+                <outlet property="subTableView" destination="9xv-yV-bZP" id="79S-DO-kRF"/>
+            </connections>
+            <point key="canvasLocation" x="402" y="343"/>
+        </view>
+    </objects>
+</document>
